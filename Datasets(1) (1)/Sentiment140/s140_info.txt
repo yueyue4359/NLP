@@ -1,0 +1,21 @@
+Sentiment140
+
+What is the format of the training data?
+
+The data is a CSV with emoticons removed. Data file format has 6 fields:
+0 - the polarity of the tweet (0 = negative, 2 = neutral, 4 = positive)
+1 - the id of the tweet (2087)
+2 - the date of the tweet (Sat May 16 23:58:44 UTC 2009)
+3 - the query (lyx). If there is no query, then this value is NO_QUERY.
+4 - the user that tweeted (robotickilldozr)
+5 - the text of the tweet (Lyx is cool)
+
+
+How was your data collected and annotated?
+
+Training data were automatically created, as opposed to having humans manual annotate tweets. 
+In their approach, they assumed that any tweet with positive emoticons, like :), were positive, and tweets with negative emoticons, 
+like :(, were negative. 
+They used the Twitter Search API to collect these tweets by using keyword search. 
+This is described in their paper: http://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf
+
